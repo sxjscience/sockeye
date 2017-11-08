@@ -10,6 +10,12 @@ Note that Sockeye has checks in place to not translate with an old model that wa
 
 For each item we will potentially have subsections for: _Added_, _Changed_, _Removed_, _Deprecated_, and _Fixed_.
 
+## [1.12.0]
+### Changed
+- Removed RNN parameter (un-)packing and support for FusedRNNCells (removed `--use-fused-rnns` flag).
+These were not used, not correctly initialized, and performed worse than regular RNN cells. Moreover,
+they made the code much more complex. RNN models trained with previous versions are no longer compatible. 
+
 ## [1.11.0]
 ### Added
  - Lexicon-based target vocabulary restriction for faster decoding. New CLI for top-k lexicon creation, sockeye.lexicon.

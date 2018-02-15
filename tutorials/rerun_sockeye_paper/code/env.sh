@@ -8,14 +8,14 @@ SOURCE=$(echo $PAIR | cut -d- -f1)
 TARGET=$(echo $PAIR | cut -d- -f2)
 
 # Path to Moses (used for detokenization, validation score)
-MOSES=/path/to/moses
+MOSES=/opt/data/moses
 
 # Path to BPE
-BPE=/path/to/subword-nmt
+BPE=/opt/data/subword-nmt
 
 # Toolkit Paths
 MARIAN=/path/to/marian
-SOCKEYE=/path/to/sockeye
+SOCKEYE=/opt/data/sockeye
 FAIRSEQ=/path/to/fairseq-py
 NEMATUS=/path/to/nematus
 OPENNMT=/path/to/opennmt

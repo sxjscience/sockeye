@@ -1,6 +1,6 @@
 # Set this to where you downloaded the data. It expects subdirs en-de and lv-en, which
 # contain the training, development, and test data and the BPE models used to produce them
-DATADIR=/path/to/data
+DATADIR=/opt/data/sockeye/tutorials/rerun_sockeye_paper/data
 
 # Set this to the language pair you're processing
 PAIR="en-de"

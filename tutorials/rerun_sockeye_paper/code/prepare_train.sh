@@ -48,9 +48,9 @@ for pair in en-de lv-en; do
 done
 
 # Download en-de dev and test sets
-sacrebleu -t wmt15 -l en-de --echo src | ./prepare_devtest.sh data/en-de/bpe.model en data/en-de/dev
-sacrebleu -t wmt17 -l en-de --echo src | ./prepare_devtest.sh data/en-de/bpe.model en data/en-de/test
+sacrebleu -t wmt15 -l en-de --echo src | bash prepare_devtest.sh data/en-de/bpe.model en data/en-de/dev
+sacrebleu -t wmt17 -l en-de --echo src | bash prepare_devtest.sh data/en-de/bpe.model en data/en-de/test
 
 # And lv-en
-sacrebleu -t wmt17/dev -l lv-en --echo src | ./prepare_devtest.sh data/lv-en/bpe.model en data/lv-en/dev
-sacrebleu -t wmt17 -l lv-en --echo src | ./prepare_devtest.sh data/lv-en/bpe.model en data/lv-en/test
+sacrebleu -t wmt17/dev -l lv-en --echo src | bash prepare_devtest.sh data/lv-en/bpe.model en data/lv-en/dev
+sacrebleu -t wmt17 -l lv-en --echo src | bash prepare_devtest.sh data/lv-en/bpe.model en data/lv-en/test

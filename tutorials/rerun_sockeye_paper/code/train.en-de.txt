@@ -1,4 +1,4 @@
-commoncrawl.de-en
-europarl-v7.de-en
-news-commentary-v12.de-en
-rapid2016.de-en
+/opt/data/wmt2017_datasets/commoncrawl/commoncrawl.de-en
+/opt/data/wmt2017_datasets/europarl-v7/europarl-v7.de-en
+/opt/data/wmt2017_datasets/news-commentary-v12/news-commentary-v12.de-en
+/opt/data/wmt2017_datasets/rapid2016/rapid2016.de-en

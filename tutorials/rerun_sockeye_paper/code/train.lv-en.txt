@@ -1,5 +1,5 @@
-dcep
-europarl-v8.lv-en
-farewell
-leta
-rapid2016.en-lv
+/opt/data/wmt2017_datasets/dcep/dcep.en-lv/dcep
+/opt/data/wmt2017_datasets/europarl-v8/europarl-v8.lv-en
+/opt/data/wmt2017_datasets/farewell/farewell
+/opt/data/wmt2017_datasets/leta/LETA-lv-en/leta
+/opt/data/wmt2017_datasets/rapid2016/rapid2016.en-lv

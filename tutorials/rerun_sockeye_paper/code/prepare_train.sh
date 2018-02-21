@@ -26,7 +26,7 @@ for pair in en-de lv-en; do
 	          cat $prefix.$lang
         done | $MOSES/scripts/tokenizer/normalize-punctuation.perl -l $lang \
             | $MOSES/scripts/tokenizer/remove-non-printing-char.perl \
-            | $MOSES/scripts/tokenizer/tokenizer.perl -q -no-escape -protected $(dirname $0)/../tokenizer/basic-protected-patterns -l $lang > data/$pair/train.tok.$lang &
+            | $MOSES/scripts/tokenizer/tokenizer.perl -q -no-escape -protected $MOSES/scripts/tokenizer/basic-protected-patterns -l $lang > data/$pair/train.tok.$lang &
     done
 
     wait

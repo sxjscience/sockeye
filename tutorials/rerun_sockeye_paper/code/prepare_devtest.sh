@@ -2,7 +2,7 @@
 
 . env.sh
 
-if [[ -z $4 ]]; then
+if [[ -z $3 ]]; then
     echo "Usage: cat RAW_FILE | prepare.sh BPE_MODEL LANG PREFIX"
     echo "  where BPE_MODEL is the path to the joint BPE model"
     echo "        LANG is the ISO 639-1 two-character language code"
